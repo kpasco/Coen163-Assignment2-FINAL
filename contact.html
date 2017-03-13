@@ -58,12 +58,29 @@
       <div class="row">
       <br>
       <form>
-      Your e-mail address please!* <input type="text" name="" value=""><br>
+      Your e-mail address please!* <input type="text" name="" value=""><br><br>
+
+      <div class="input-field col s12">
+      <select>
+          <option value="" disabled selected>Please Select Your Inquiry Type.</option>
+          <option value="1">Wood Choices</option>
+          <option value="2">Other Woods</option>
+          <option value="3">Other Designs</option>
+          <option value="1">Bulk</option>
+          <option value="2">Wood Finishes</option>
+          <option value="3">Custom Items/One Off's</option>
+          <option value="1">Spare Parts</option>
+          <option value="2">Other Orders/Trade Inquiry</option>
+      </select>
+      </div>
+
+      <br><br><br><br><br><br>
+
+
       Please type your text or inquiry here:<textarea rows="4" cols="80"></textarea>
       Upload your file <input type="file" name="" value=""><br>
-      Checkbox starts here <input type = "checkbox" name = ""  and ends here<br>
 
-      <input type = "submit" value = "submit">
+      <input type = "reset" value = "Submit" onclick="Materialize.toast('Message Sent', 4000)">
       <input type="reset" value="Reset" />
 
 
