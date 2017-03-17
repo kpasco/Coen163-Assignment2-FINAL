@@ -14,29 +14,29 @@
 <body>
   <nav class="grey lighten-5" role="navigation">
     <div class="nav-wrapper">
-  <a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons blue-text text-darken-2">filter_b_and_w</i><div class="blue-text text-darken-2"> The Wooden Door Stop Shop </div></a>
-  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons blue-text text-darken-2">menu</i></a>
+  <a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons blue-text text-darken-4">filter_b_and_w</i><div class="blue-text text-darken-4"> The Wooden Door Stop Shop </div></a>
+  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons blue-text text-darken-4">menu</i></a>
     
   <ul class="right hide-on-med-and-down">
-    <li><a class="blue-text text-darken-2" href="index.html">Home</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Door Stops</a></li>
-    <li><a class="blue-text text-darken-2" href="product.html">Light Pulls</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Stands</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Window Wedges</a></li>    
-    <li class="active"><a class="blue-text text-darken-2" href="contact.html">Contact Us</a></li>
-    <li><a class="blue-text text-darken-2" href="about.html">About</a></li>
-    <li><a class="blue-text text-darken-2" href="#"><i class="material-icons blue-text">shopping_cart</i></a></li>
+    <li><a class="blue-text text-darken-4" href="index.html">Home</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Door Stops</a></li>
+    <li><a class="blue-text text-darken-4" href="product.html">Light Pulls</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Stands</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Window Wedges</a></li>    
+    <li class="bold"><a class="blue-text text-darken-4" href="contact.html">Contact Us</a></li>
+    <li><a class="blue-text text-darken-4" href="about.html">About</a></li>
+    <li><a class="blue-text text-darken-4" href="#"><i class="material-icons blue-text">shopping_cart</i></a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
-    <li><a class="blue-text text-darken-2" href="index.html">Home</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Door Stops</a></li>
-    <li><a class="blue-text text-darken-2" href="product.html">Light Pulls</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Stands</a></li>
-    <li><a class="blue-text text-darken-2" href="#">Window Wedges</a></li>    
-    <li class="active"><a class="blue-text text-darken-2" href="contact.html">Contact Us</a></li>
-    <li><a class="blue-text text-darken-2" href="about.html">About</a></li>
-    <li><a class="blue-text text-darken-2" href="#"><i class="material-icons blue-text">shopping_cart</i></a></li>
+    <li><a class="blue-text text-darken-4" href="index.html">Home</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Door Stops</a></li>
+    <li><a class="blue-text text-darken-4" href="product.html">Light Pulls</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Stands</a></li>
+    <li><a class="blue-text text-darken-4" href="#">Window Wedges</a></li>    
+    <li class="bold"><a class="blue-text text-darken-4" href="contact.html">Contact Us</a></li>
+    <li><a class="blue-text text-darken-4" href="about.html">About</a></li>
+    <li><a class="blue-text text-darken-4" href="#"><i class="material-icons blue-text">shopping_cart</i></a></li>
     </ul>
       
     </div>
@@ -44,7 +44,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Contact Us</h1>
+      <h1 class="header center black-text">Contact Us</h1>
       <div class="row center">
         <h5 class="header col s12 light left-align">If you have any questions about our products or the wood used, please use the form below. We appriciate any comments, views or ideas. We prefer not to give a phone number as it interupts our daily work and causes delays in the workshop. If you do want to speak to us please send an email first so that we can then forward our phone deatils. Many thanks. </h5>
       </div>
@@ -60,11 +60,13 @@
       <div class="row">
       <br>
       <form>
-      Your e-mail address please!* <input id="email" type="email" class="validate" name="" value=""><br><br>
-      
-
-      <div class="input-field col s12">
-      <select>
+	  <label for="email"> Email </label>
+      Your e-mail address please! <input id="email" type="email" class="validate" name="" value=""><br><br>
+      </form>
+	
+	<form>
+      <label for="inquiry"> Inquiry Type </label>
+	  <select class="browser-default" id="inquiry">
           <option value="" disabled selected>Please Select Your Inquiry Type.</option>
           <option value="1">Wood Choices</option>
           <option value="2">Other Woods</option>
@@ -76,12 +78,14 @@
           <option value="2">Other Orders/Trade Inquiry</option>
       </select>
       </div>
+	</form>
+      <br><br>
 
-      <br><br><br><br><br><br>
-
-
-      Please type your text or inquiry here:<textarea rows="4" cols="80"></textarea>
-      Upload your file <input type="file" name="" value=""><br><br><br>
+	 <label for="textBox"> Text Box </label>
+      Please type your text or inquiry here:<textarea id="textBox" rows="4" cols="80"></textarea>
+      
+	 <label for="upload"> Upload </label> 
+	  Upload your file <input id= "upload" type="file" name="" value=""><br><br><br>
 
 
       <br>
@@ -113,7 +117,7 @@
     </div>
 	<div class="container">
 		<p class="center-align">
-			<a class="class="blue-text text-darken-2"" href="http://materializecss.com">Original site</a> created by Mortimer Cartidge
+			<a class="blue-text text-darken-4"" href="http://woodendoorstopshop.com">Original site</a> created by Mortimer Cartidge
 		</p>	
     </div>
   </footer>

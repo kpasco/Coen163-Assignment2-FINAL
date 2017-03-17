@@ -24,6 +24,10 @@ blockquote {
 	font-size: inherit;
 }
 
-h1 {
-	background-color: #191919;
+label {
+	color: #515151;
 }
+
+select:disabled {
+  color: rgba(0, 0, 0);
+}	
